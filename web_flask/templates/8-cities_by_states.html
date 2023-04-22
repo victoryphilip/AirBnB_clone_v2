@@ -6,6 +6,7 @@
     <BODY>
         <H1>States</H1>
         <UL>
+<<<<<<< HEAD
         {% for state in states.values()|sort(attribute="name") %}
             <LI>{{ state.id }}: <B>{{ state.name }}</B>
                 <UL>
@@ -16,5 +17,17 @@
             </LI>
         {% endfor %}
         </UL>
+=======
+			{% for state in states|sort(attribute="name") %}
+			<LI>{{ state.id }}: <B>{{ state.name }}</B>
+				<UL>
+					{% for city in state.cities|sort(attribute="name") %}
+					<LI>{{ city.id }}: <B>{{ city.name }}</B></LI>
+					{% endfor %}
+				</UL>
+			</LI>
+			{% endfor %}
+		</UL>
+>>>>>>> 36b56ffa1fd79c4b54a506f4ab42f55fa2dfc3b9
     </BODY>
 </HTML>

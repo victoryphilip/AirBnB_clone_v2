@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	margin:0px;
 	padding:0px;
@@ -10,4 +11,24 @@ body {
 .container {
     max-width: 1000px;
     margin: 30px auto;
+=======
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding-bottom: 80px;
+>>>>>>> 36b56ffa1fd79c4b54a506f4ab42f55fa2dfc3b9
 }
